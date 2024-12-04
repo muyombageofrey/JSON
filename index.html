@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Data Visualization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-900 p-8">
+    <div class="text-center font-serif font-bold rounded-sm shadow-md">
+    <h1 class="text-3xl font-bold text-center text-red-800">STUDENTS ADMISSION DATA VISUALIZATION</h1>
+    </div>
+    <div id="chartContainer" class="max-w-3xl mx-auto mt-10 bg-white shadow-md rounded-lg p-6">
+        <canvas id="admissionChart" class="w-full"></canvas>
+
+        <p class="text-center text-gray-600 mt-4">
+            This chart visualizes gender distribution among admitted students.
+            </p>
+    </div>
+
+
+      
+        <div id="chartContainer" class="max-w-3xl mx-auto mt-10 bg-white shadow-md rounded-lg p-6">
+            <canvas id="districtchart" class="w-full"></canvas>
+
+            <p class="text-center text-gray-600 mt-4">
+                This chart visualizes the students per district.
+                </p>
+        </div>
+
+        <div id="chartContainer" class="max-w-3xl mx-auto mt-10 bg-white shadow-md rounded-lg p-6">
+            <canvas id="trends" class="w-full"></canvas>
+
+            <p class="text-center text-gray-600 mt-4">
+                This chart visualizes the admission trends over the years.
+                </p> 
+        </div>
+
+        <div id="chartContainer" class="max-w-3xl mx-auto mt-10 bg-white shadow-md rounded-lg p-6">
+            <canvas id="popularity" class="w-full"></canvas>
+            
+            <p class="text-center text-gray-600 mt-4">
+            This chart visualizes the popular course.
+            </p> 
+        </div>
+
+<div class="font-serif pt-5 text-red-200 pl-20">
+    <h2 class="font-bold ">CHALLENGES FACED AND THERE SOLUTIONS</h2>
+    <ul>
+        <li>graphs and charts must be responsive to fit well on different screen sizes
+            use media queries to adjust the chart`s container size for different screen resolutions
+        </li>
+        <li>graphs with large datasets slow down leading to poor performance
+            using data aggregation techniques to reduce the number of data points plotted
+        </li>
+        <li>Ensuring that graphs render consistently across different browsers can be difficult
+            testing graphs on different devices and browsers and use polyfills
+        </li>
+    </ul>
+    <h3 class="font-bold">INSIGHTS</h3>
+    <ul>
+        <li>Pie chart
+            it is shows how parts of awhole compare. Each slice represents
+            a program, and the size of the slice indicates the propotion of the total number of students doing that course
+        </li>
+    </ul>
+</div>
+     </body>   
+    <script src="script.js"></script>
+
+</html>
